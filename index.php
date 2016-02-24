@@ -17,7 +17,11 @@
     
     <div id="head_wrap">
         <div id="header">
-            <img src="images/logo.png" style="float:left">
+            <img src="images/logo.png">
+        <form method="post" action="" id="form1">
+            <input type="text" name="email" placeholder="Email"/>
+            <input type="password" name="pass" placeholder="*****"/>            <button name="login">Login</button>
+        </form>
         </div>
         
         </div>
