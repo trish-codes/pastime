@@ -12,9 +12,18 @@
     </head>
 
 <body>
+    <!-----------------container starts---------------------------------->
+    <div class="container">
     
+    <div id="head_wrap">
+        <div id="header">
+        
+        </div>
+        
+        </div>
     
-    
+    </div>
+    <!-----------------container ends------------------------------------>
 
     
 </body>
