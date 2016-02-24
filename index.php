@@ -17,7 +17,7 @@
     
     <div id="head_wrap">
         <div id="header">
-        
+            <img src="images/logo.png" style="float:left">
         </div>
         
         </div>
