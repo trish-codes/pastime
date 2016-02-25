@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-<?php
-include("functions/functions.php");?>
+<?php include("functions/functions.php");?>
 
 <html>
     <head>
