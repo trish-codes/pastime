@@ -18,7 +18,8 @@
         <div id="header">
             <img src="images/logo.png">
         <form method="post" action="" id="form1">
-            <strong>Email:</strong><input type="text" name="email" placeholder="Email" required="required"/>
+            <strong>Email:</strong>
+            <input type="email" name="email" placeholder="Email" required="required"/>
             <strong>Password:</strong>
             <input type="password" name="pass" placeholder="*****" required="required"/>            
         <button name="login">Login</button>
@@ -55,7 +56,7 @@
                 <tr>
                     <td align="right">Email:</td>
                     <td>
-                    <input type="text" name="u_email" placeholder="Enter your email" required="required" />
+                    <input type="email" name="u_email" placeholder="Enter your email" required="required" />
                     </td>
                 </tr>
                 
@@ -99,6 +100,11 @@
             </form>
             </div>
         </div>
+        
+        <div id="footer">
+            <h2>&copy; 2016- www.pastime.com</h2>
+        </div>
+        
     </div>
     <!-----------------container ends------------------------------------>
 
