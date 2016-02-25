@@ -38,7 +38,7 @@
             <img src="images/">
         </div>
         <div id="form2">
-            <form action="" method="post">
+            <form action=" " method="post">
             <h2>Sign Up Here</h2>
             <table>
                 <tr>
@@ -100,7 +100,7 @@
                 </tr>
             </table>
             </form>
-            <?php InsertUser();?>
+            <?php InsertUser(); ?>
         </div>  
         </div>
         
