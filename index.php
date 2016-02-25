@@ -64,7 +64,7 @@
                     <td>
                     <select name="u_country">
                     <option>Select a country</option>
-                    <option>United States</option`> 
+                    <option>United States</option> 
                     <option>Canada</option>
                     <option>United Kingdom</option>
                     <option>France</option>
