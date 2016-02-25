@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-include("functions/functions.php");
+include("functions/functions.php");?>
 
 <html>
     <head>
@@ -101,7 +101,8 @@ include("functions/functions.php");
                 </tr>
             </table>
             </form>
-            </div>
+            <?php InsertUser();?>
+        </div>  
         </div>
         
         <div id="footer">

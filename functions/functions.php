@@ -3,9 +3,11 @@
 $con = mysqli_connect("localhost","root","","pastime") or die ("Connection was not established");
 
 function InsertUser(){
-
+    
+    global $con;
+    
     if(isset($_POST['sign_up'])){
-        
+
         $name = $_POST['u_name'];
         $pass = $_POST['u_pass'];
         $email = $_POST['u_email'];
@@ -23,7 +25,7 @@ function InsertUser(){
         
         if($check==1){
             
-        echo "<h2>This email is already registered!</h2>";
+        echo "<script>alert('Email is already registered, please try another)</script>";
         exit();
             
         }
