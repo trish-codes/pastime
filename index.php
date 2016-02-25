@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 
+<?php
+include("functions/functions.php");
+
 <html>
     <head>
     
@@ -49,7 +52,7 @@
                 <tr>
                     <td align="right">Password:</td>
                     <td>
-                    <input type="text" name="u_pass" placeholder="Enter your password" required="required"/>
+                    <input type="password" name="u_pass" placeholder="Enter your password" required="required"/>
                     </td>
                 </tr>
                 
@@ -76,7 +79,7 @@
                   <tr>
                     <td align="right" required="required">Gender:</td>
                     <td>
-                    <select name="u_country">
+                    <select name="u_gender">
                     <option>Select a gender</option>
                     <option>Male</option> 
                     <option>Female</option>
