@@ -8,12 +8,12 @@ if(isset($_POST['sign_up'])){
         $email = mysqli_real_escape_string($con,$_POST['u_email']);
         $country = mysqli_real_escape_string($con,$_POST['u_country']);
         $gender = mysqli_real_escape_string($con,$_POST['u_gender']);
-        $birthday = mysqli_real_escape_string($con,$_POST['u_birthday']);
-        $name = mysqli_real_escape_string($con,$_POST['u_name']);
+        $b_day = mysqli_real_escape_string($con,$_POST['u_birthday']);
         $status = "unverified";
         $posts = "No";
+			
         
-        $get_email = "select * from users where user_email='$email''";
+        $get_email = "select * from users where user_email='$email'";
         $run_email = mysqli_query($con,$get_email);
         $check = mysqli_num_rows($run_email);
         
