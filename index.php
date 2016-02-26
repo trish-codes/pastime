@@ -1,6 +1,9 @@
-<!DOCTYPE html>
+<?php
+session_start();
+include("functions/functions.php");
+?>
 
-<?php include("functions/functions.php");?>
+<!DOCTYPE html>
 
 <html>
     <head>
@@ -100,7 +103,9 @@
                 </tr>
             </table>
             </form>
-            <?php InsertUser(); ?>
+            <?php
+            include("user_insert.php");
+            ?>
         </div>  
         </div>
         
