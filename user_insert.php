@@ -1,5 +1,7 @@
 <?php
 
+include("includes/connection.php");
+
 if(isset($_POST['sign_up'])){
         $name = mysqli_real_escape_string($con,$_POST['u_name']);
         $pass = mysqli_real_escape_string($con,$_POST['u_pass']);
@@ -35,6 +37,7 @@ if(isset($_POST['sign_up'])){
         $run_insert = mysqli_query($con, $insert);
             
             if($run_insert){
+                $_SESSION['user_email']=$email;
                 echo "<script>alert('Registration Successful!') </script>";
                 echo "<script>window.open('home.php', '_self')</script>";
             }
