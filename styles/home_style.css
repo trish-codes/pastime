@@ -44,7 +44,7 @@ body {
     margin: 0 auto;
     padding: 10px;
     width: 1250px;
-    height: 50px;
+    height: 35px;
 }
 
 #header img{
@@ -55,6 +55,7 @@ body {
 #menu{
     line-height: 35px;
     padding: 0;
+    margin: 0;
 }
 
 #menu li{
@@ -67,29 +68,22 @@ body {
     padding: 5px;
     text-decoration: none;
     color: grey;
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#menu a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 #form1{
     float: right;
-    line-height: 100px;
+    line-height: 35px;
     font-family: 'Oswald', sans-serif;
-}
-
-#form1 input{
-    width: 150px;
     padding: 5px;
 }
 
-#form1 button{
-    width: 75px;
-    padding: 5px;
-}
-
-#form1 button:hover{
-    background-color: darkgrey;
-    color:white;
-}
 #form2 h2{
     font-family: 'Oswald', sans-serif;
     text-align: center;

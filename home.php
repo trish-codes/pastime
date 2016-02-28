@@ -41,7 +41,10 @@ include("includes/connection.php");
                 ?>
             
                 </ul>  
-            
+                <form method="get" action="results.php" id="form1">
+                    <input type="text" name="user_query" placeholder="Search topics" />
+                    <input type="submit" name="search" value="Search"/>
+                </form>
             
             
             
