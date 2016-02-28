@@ -81,37 +81,19 @@ body {
     float: right;
     line-height: 35px;
     font-family: 'Oswald', sans-serif;
-    padding: 5px;
+    padding-top: 5px;
+}
+.content{
+    width: 1000px;
+    margin: 0 auto;
 }
 
-#form2 h2{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    margin-bottom: 10px;
-}
-#form2{
-    float: right;
-    margin-top: 20px;
-    margin-right: 200px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    margin-bottom: 100px;
-}
-
-#form2 input{
-    width: 200px;
-    height: 10px;
-    padding: 20px;
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-
-
-#form2 select{
-    width: 150px;
-    height: 10px;
-    padding: 10px;
-    border: 1px solid grey;
-    border-radius: 5px;
+#user_timeline{
+    width: 250px;
+    float: left;
+    height: 600px;
+    background-color: teal;
+    border-right: 2px solid black;
 }
 
 #footer{

@@ -45,12 +45,32 @@ include("includes/connection.php");
                     <input type="text" name="user_query" placeholder="Search topics" />
                     <input type="submit" name="search" value="Search"/>
                 </form>
-            
-            
-            
             </div>
         
         </div>
+            <div class = "content">
+                <!--------------------User timeline starts-------------------------->
+                <div id="user_timerline">
+                    <div id="user_details">
+                        <?php
+                        $user = $_SESSION['user_email'];
+                        $get_user = "select * from users where user_email = '$user'";
+                        $run_user = mysqli_query($con, $get_user);
+                        $row = mysqli_fetch_array($run_user);
+                        $user_id = 
+                        ?>
+                    </div>
+                    
+                </div>
+                <!------------------User timeline ends------------------------------>
+                <!------------------Content timeline starts------------------------->
+                <div id="content_timeline">
+                    <div id="posts">
+                    
+                    </div>
+                </div>
+                <!-------------------Content timeline ends-------------------------->
+            </div>
         
 
     </div>
