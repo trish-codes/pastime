@@ -57,7 +57,22 @@ include("includes/connection.php");
                         $get_user = "select * from users where user_email = '$user'";
                         $run_user = mysqli_query($con, $get_user);
                         $row = mysqli_fetch_array($run_user);
-                        $user_id = 
+                        $user_id = $row['user_id'];
+                        $user_name = $row['user_name'];
+                        $user_country = $row['user_country'];
+                        $user_image = $row['user_image'];
+                        $register_date = $row['register_date'];
+                        $last_login = $row['last_login'];
+                        echo "
+    
+                        <p><img src='user/user_images/$user_image' width='200' height='200'/></p>
+                        
+                        <p><strong>Name:</strong> $user_name</p>
+                        <p><strong>Country:</strong> $user_country</p>
+                        <p><strong>Last Login:</strong> $last_login</p>
+                        <p><strong>Member Since:</strong> $register_date</p>
+                        
+                        "; 
                         ?>
                     </div>
                     
