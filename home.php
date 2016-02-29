@@ -1,6 +1,7 @@
 <?php
 session_start();
 include("includes/connection.php");
+include("functions/functions.php");
 ?>
 
 <!DOCTYPE html>
@@ -87,6 +88,11 @@ include("includes/connection.php");
                     <h2>What's your questions or ideas today? Let's discuss!</h2>
                     <input type="text" name="title" placeholder="Write a Title"/><br/>
                     <textarea cols="70" rows="4" name="content"></textarea><br/>
+                    <select name = "topic">
+                        <option>Select Topic</option>
+                        <?php getTopics();?>
+                    </select>
+                    <input type="submit" name="sub" value="Post to Timeline"/>
                     </form>
                     <div id="posts">
                     
