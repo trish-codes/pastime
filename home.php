@@ -64,7 +64,6 @@ include("includes/connection.php");
                         $register_date = $row['register_date'];
                         $last_login = $row['last_login'];
                         echo "
-    
                         <p><img src='user/user_images/$user_image' width='200' height='200'/></p>
                         
                         <p><strong>Name:</strong> $user_name</p>
@@ -72,6 +71,10 @@ include("includes/connection.php");
                         <p><strong>Last Login:</strong> $last_login</p>
                         <p><strong>Member Since:</strong> $register_date</p>
                         
+                        <p><a href='my_messages.php'>Messages</a></p>
+                        <p><a href='my_posts.php'>My Posts</a></p>
+                        <p><a href='edit_profile.php'>Edit My Account</a></p>
+                        <p><a href='logout.php'></a>Log Out</p>
                         "; 
                         ?>
                     </div>
