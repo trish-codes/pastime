@@ -1,7 +1,8 @@
 <?php
 
     $con = mysqli_connect("localhost" ,"root" ," " ,"pastime");
-
+        
+        //function for getting topics
         function getTopics(){
         global $con;
         
@@ -17,6 +18,7 @@
                     
             }
         }
+        //function for inserting posts
         function insertPost(){
             
             if(isset($_POST['sub'])){
@@ -39,4 +41,18 @@
             
             
         }
+//function for displaying posts
+
+function get_posts(){
+    global $con;
+    
+    $per_page = 5;
+    if (isset($GET['page'])) {
+        $page = $_GET['page'];
+    }
+    else{
+        $page = 1;
+    }
+}
+
 ?>
