@@ -95,7 +95,7 @@ include("functions/functions.php");
                     <input type="submit" name="sub" value="Post to Timeline"/>
                     </form>
                     <div id="posts">
-                    
+                    <?php insertPost();?>
                     </div>
                 </div>
                 <!-------------------Content timeline ends-------------------------->
