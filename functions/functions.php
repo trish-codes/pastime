@@ -70,8 +70,23 @@ function get_posts(){
     //getting user who has posted thread
     $user = "select * from users where user_id='$user_id' AND posts='yes'";
         
+        $run_user= mysqli_query($con,$user);
+        $run_user=mysqli_fetch_array($run_user);
+        $user_name = $row_user['user_name'];
+        $user_image = $row_user['user_image'];
         
-        
+    echo"<div id ='posts'>
+    
+    <p><img src='' width='50' height='50'></p>
+    <h3><a href='user_profile.php?user_id=$user_id'>$user_name</a></h3>
+    
+    <h3>$post_title</h3>
+    <p>$post_date</p>
+    <p>$content</p>
+    <a href='single.php?post_id=$post_id' style='float:right;'><button>Reply to this</button></a>
+    
+    </div>
+    ";
         
     }
 }
