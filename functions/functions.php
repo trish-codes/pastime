@@ -59,6 +59,21 @@ function get_posts(){
     
     $run_posts = mysqli_query($con,$get_posts);
     
+    while($row_posts=mysqli_fetch_array($run_posts)){
+        
+        $post_id = $row_posts['post_id'];
+        $user_id = $row_posts['user_id'];
+        $post_title = $row_posts['post_title'];
+        $content = $row_posts['post_content'];
+        $post_date = $row_posts['post_date'];
+        
+    //getting user who has posted thread
+    $user = "select * from users where user_id='$user_id' AND posts='yes'";
+        
+        
+        
+        
+    }
 }
 
 ?>
