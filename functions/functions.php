@@ -35,6 +35,9 @@
                 
                     if($run){
                         echo"<h3> Posted to timeline </h3>";
+                        
+                    $update ="update users set posts='yes' where user_id='$user_id''";
+                    run_update = mysqli_query($con,$update);
                     }
                      
             }
