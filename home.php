@@ -94,8 +94,10 @@ include("functions/functions.php");
                     </select>
                     <input type="submit" name="sub" value="Post to Timeline"/>
                     </form>
-                    <div id="posts">
                     <?php insertPost();?>
+                    <div id="posts">
+                        <h3>Most Recent Discussions</h3>
+                        <?php get_posts();?>
                     </div>
                 </div>
                 <!-------------------Content timeline ends-------------------------->

@@ -92,6 +92,7 @@ function get_posts(){
     ";
         
     }
+    include("pagination.php");
 }
 
 ?>
