@@ -53,6 +53,12 @@ function get_posts(){
     else{
         $page = 1;
     }
+    $start_from = ($page-1) * $per_page;
+    
+    $get_posts = "select * from posts ORDER by 1 DESC LIMIT $start_from, $per_page";
+    
+    $run_posts = mysqli_query($con,$get_posts);
+    
 }
 
 ?>
