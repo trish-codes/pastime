@@ -28,7 +28,12 @@
                 $content = addslashes($con,$_POST ['content']);
                 $topic = $_POST['topic'];
                 
+                if($content==''){
+                    echo"<h2>Please enter topic description</h2>";
+                   
+                    exit();
                 
+                }
                 $insert = "insert into posts (user_id, topic_id, post_title, post_content, post_date) values ('$user_id','$topic','$content', NOW())";
                 
                 $run = mysqli_query($con,$insert);

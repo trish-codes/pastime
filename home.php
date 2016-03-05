@@ -86,7 +86,7 @@ include("functions/functions.php");
                 <div id="content_timeline">
                     <form action="home.php?id=<?php echo $user_id;?>" method="post" id="f">
                     <h2>What's your questions or ideas today? Let's discuss!</h2>
-                    <input type="text" name="title" placeholder="Write a Title"/><br/>
+                    <input type="text" name="title" placeholder="Write a Title" required="required"/><br/>
                     <textarea cols="70" rows="4" name="content"></textarea><br/>
                     <select name = "topic">
                         <option>Select Topic</option>
@@ -95,10 +95,8 @@ include("functions/functions.php");
                     <input type="submit" name="sub" value="Post to Timeline"/>
                     </form>
                     <?php insertPost();?>
-                    <div id="posts">
                         <h3>Most Recent Discussions</h3>
                         <?php get_posts();?>
-                    </div>
                 </div>
                 <!-------------------Content timeline ends-------------------------->
             </div>
