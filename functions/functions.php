@@ -24,8 +24,8 @@
             if(isset($_POST['sub'])){
                 global $con;
                 global $user_id;
-                $title = $_POST['title'];
-                $content = $_POST ['content'];
+                $title = addslashes($con,$_POST['title']);
+                $content = addslashes($con,$_POST ['content']);
                 $topic = $_POST['topic'];
                 
                 

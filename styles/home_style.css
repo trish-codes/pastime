@@ -158,6 +158,16 @@ body {
     font-weight: bold;
 }
 
+#posts{
+    width: 600px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: justify;
+}
+
+#posts h3{
+    color:white;
+}
 #footer{
     width:100%;
     height: 100px;
