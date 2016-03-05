@@ -34,6 +34,10 @@
                     exit();
                 
                 }
+                
+                else{
+                    
+                
                 $insert = "insert into posts (user_id, topic_id, post_title, post_content, post_date) values ('$user_id','$topic','$content', NOW())";
                 
                 $run = mysqli_query($con,$insert);
@@ -44,6 +48,7 @@
                     $update ="update users set posts='yes' where user_id='$user_id''";
                     run_update = mysqli_query($con,$update);
                     }
+                }
                      
             }
             
